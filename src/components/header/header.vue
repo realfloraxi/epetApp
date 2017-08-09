@@ -1,24 +1,23 @@
 <template>
   <div class="header">
     <div class="header_up">
-      <div class="header_btn">
-        <span class="closebtn">
-          <img src="./closebtn_03.png">
-        </span>
-      </div>
       <div class="header_pic">
         <a href="###">
           <img src="./header.png">
         </a>
       </div>
+      <span class="header_btn">
+          <img src="./closebtn_03.png">
+      </span>
     </div>
     <div class="header_down">
       <div class="search">
         <div class="search_item search_left">
           <span>猫站</span>
           <span>|</span>
-          <span>重庆</span>
-
+          <a href="###">
+            <span>重庆</span>
+          </a>
         </div>
         <div class="search_item search_center">
           <a href="###">
@@ -63,9 +62,13 @@
         img
           width 100%
           height 100%
+      .header_pic a
+        display block
       .header_pic img
         width 100%
         height 100%
+        vertical-align bottom
+
     /*头部下部分*/
     .header_down
       height 53px
@@ -74,7 +77,6 @@
         height 43px
         line-height 43px
         margin 5px 10px
-        /*background-color deeppink*/
         position relative
         .search_item
           display inline-block

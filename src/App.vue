@@ -2,26 +2,26 @@
   <div>
     <epet-header></epet-header>
 
-    <div class="tab">
-      <div class="tab-item">
+    <ul class="tab">
+      <li class="tab-item">
         <router-link to="/home_page">首页</router-link>
-      </div>
-      <div class="tab-item">
+      </li>
+      <li class="tab-item">
         <router-link to="/cat_food">猫粮</router-link>
-      </div>
-      <div class="tab-item">
+      </li>
+      <li class="tab-item">
         <router-link to="/sales">特卖</router-link>
-      </div>
-      <div class="tab-item">
+      </li>
+      <li class="tab-item">
         <router-link to="/supermarket">罐头超市</router-link>
-      </div>
-      <div class="tab-item">
+      </li>
+      <li class="tab-item">
         <router-link to="/video">潮品视频</router-link>
-      </div>
-      <div class="tab-item">
+      </li>
+      <li class="tab-item">
         <router-link to="/classroom">新喵课堂</router-link>
-      </div>
-    </div>
+      </li>
+    </ul>
 
     <router-view></router-view>
   </div>
@@ -39,14 +39,14 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   .tab
-    display flex
-    height 35px
-    line-height 35px
-    background-color burlywood
-    .tab_item
+    height 36px
+    white-space nowrap
+    overflow hidden
+    .tab-item
+      height 36px
+      float left
+      width 16%
       font-size 14px
-      width 0
-      flex 1
-
-
+      color #666
+      text-align center
 </style>
