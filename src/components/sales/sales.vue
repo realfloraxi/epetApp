@@ -1,5 +1,5 @@
 <template>
-  <div>sales route components</div>
+  <div>sales route components1</div>
 </template>
 
 <script>

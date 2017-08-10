@@ -13,10 +13,10 @@
     <div class="header_down">
       <div class="search">
         <div class="search_item search_left">
-          <span>猫站</span>
-          <span>|</span>
-          <a href="###">
-            <span>重庆</span>
+          <span>猫站|</span><!--
+          --><a href="###">
+          <span>重庆</span>
+          <div class="triangle"></div>
           </a>
         </div>
         <div class="search_item search_center">
@@ -47,11 +47,13 @@
     /*background-color #7e8c8d*/
     font-size 14px
     color #333
+    /*position fixed
+    z-index 99*/
 
     /*头部上部分*/
     .header_up
       height 55px
-      background-color aqua
+      /*background-color aqua*/
       position relative
       .header_btn
         width 19px
@@ -82,6 +84,15 @@
           display inline-block
         .search_left
           width 80px
+          .triangle
+            width 0
+            height 0
+            border-bottom 4px solid #666
+            border-right 4px solid transparent
+            border-left 4px solid transparent
+            float right
+            margin-top 19px
+            margin-right 8px
         .search_center
           position relative
           a input
